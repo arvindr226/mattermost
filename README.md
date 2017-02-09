@@ -3,7 +3,7 @@
 The simplest way to build mattermost application on Docker.
 
 Step1: Git clone the repository.  
-            $ git clone https://github.com/laitkor/mattermost.git
+            $ git clone https://github.com/arvindr226/mattermost.git
 
 Step2: Install Docker Engine and Docker-compose.
 

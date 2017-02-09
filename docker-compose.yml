@@ -1,6 +1,6 @@
 db:
 #  build: db
-  image : laitkor/mattermost-db
+  image : arvindr226/mattermost-db
   restart: always
   volumes:
     - ./volumes/db/var/lib/postgresql/data:/var/lib/postgresql/data
@@ -16,7 +16,7 @@ db:
   #  - AWS_REGION=us-east-1
 app:
 #  build: app
-  image : laitkor/mattermost-app
+  image : arvindr226/mattermost-app
   links:
     - db:db
   restart: always
@@ -28,7 +28,7 @@ app:
     - REPO=https://github.com/mattermost/platform.git
 web:
 #  build: web
-  image : laitkor/mattermost-web
+  image : arvindr226/mattermost-web
   ports:
     - "80:80"
     - "443:443"
